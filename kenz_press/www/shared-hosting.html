@@ -1,0 +1,199 @@
+{% extends "templates/kenz_press_web.html" %}
+
+{% block title %}Shared Hosting - Kenz Press{% endblock %}
+{% block og_title %}Shared Hosting - Kenz Press{% endblock %}
+
+{% block page_content %}
+<!-- Hero Section -->
+<section class="page-hero">
+    <div class="container">
+        <div class="hero-badge">
+            <span class="badge-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                    <line x1="6" y1="6" x2="6.01" y2="6"/>
+                    <line x1="6" y1="18" x2="6.01" y2="18"/>
+                </svg>
+            </span>
+            <span>Shared Hosting</span>
+        </div>
+        <h1 class="hero-title">
+            Affordable hosting for
+            <span class="gradient-text">small teams</span>
+        </h1>
+        <p class="hero-subtitle">
+            Get started with Frappe apps without breaking the bank.
+            Perfect for startups, small businesses, and personal projects.
+        </p>
+        <div class="hero-cta">
+            <a href="/signup?plan=shared" class="btn btn-primary">
+                Start Free Trial
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+            <a href="#features" class="btn btn-secondary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section" id="features">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Features</span>
+            <h2 class="section-title">Everything included in <span class="gradient-text">Shared Hosting</span></h2>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
+                <h3>Free SSL Certificate</h3>
+                <p>Automatic SSL certificates for all your sites. Your data is always encrypted in transit.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    </svg>
+                </div>
+                <h3>Daily Backups</h3>
+                <p>Automatic daily backups with 7-day retention. Restore your site with one click.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"/>
+                        <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                </div>
+                <h3>Auto Updates</h3>
+                <p>Keep your apps secure with automatic updates. We handle the maintenance.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                </div>
+                <h3>Email Support</h3>
+                <p>Get help when you need it. Our support team responds within 24 hours.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                </div>
+                <h3>Dashboard Access</h3>
+                <p>Intuitive control panel to manage your sites, backups, and settings.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                </div>
+                <h3>Custom Subdomain</h3>
+                <p>Get a free subdomain like yoursite.kenz.press or connect your own domain.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Pricing</span>
+            <h2 class="section-title">Simple, <span class="gradient-text">predictable pricing</span></h2>
+        </div>
+
+        <div class="pricing-single">
+            <div class="pricing-card featured">
+                <div class="pricing-header">
+                    <h3>Shared Hosting</h3>
+                    <p>Perfect for small teams and startups</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="currency">$</span>
+                    <span class="amount">25</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        1 GB RAM
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        10 GB SSD Storage
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Daily automated backups
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Free SSL certificate
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Email support
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        99.5% uptime SLA
+                    </li>
+                </ul>
+                <a href="/signup?plan=shared" class="btn btn-primary btn-block">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to get started?</h2>
+            <p>Start your 14-day free trial today. No credit card required.</p>
+            <div class="cta-buttons">
+                <a href="/signup?plan=shared" class="btn btn-primary btn-lg">
+                    Start Free Trial
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="/contact" class="btn btn-ghost btn-lg">Contact Sales</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

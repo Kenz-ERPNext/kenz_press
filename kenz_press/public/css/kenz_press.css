@@ -3,6 +3,27 @@
    Inspired by Frappe Cloud design system
    ===================================================== */
 
+/* Force dark mode styles with high specificity */
+html[data-theme="dark"],
+html[data-theme="dark"] body,
+[data-theme="dark"] {
+    --color-bg-primary: #0a0a0a !important;
+    --color-bg-secondary: #111111 !important;
+    --color-bg-tertiary: #171717 !important;
+    --color-bg-elevated: #1a1a1a !important;
+    --color-bg-card: #141414 !important;
+    --color-bg-hover: #1f1f1f !important;
+    --color-border: #262626 !important;
+    --color-border-subtle: #1f1f1f !important;
+    --color-border-hover: #333333 !important;
+    --color-text-primary: #ffffff !important;
+    --color-text-secondary: #a1a1a1 !important;
+    --color-text-tertiary: #737373 !important;
+    --color-text-muted: #525252 !important;
+    background-color: #0a0a0a !important;
+    color: #ffffff !important;
+}
+
 /* CSS Variables - Theme Configuration */
 :root {
     /* Colors - Dark Mode (Default) */
@@ -146,6 +167,108 @@ body {
     background-color: var(--color-bg-primary);
     min-height: 100vh;
     overflow-x: hidden;
+}
+
+/* Dark mode explicit overrides for Frappe compatibility */
+[data-theme="dark"] body,
+[data-theme="dark"] .main-content,
+[data-theme="dark"] .hero-section,
+[data-theme="dark"] .features-section,
+[data-theme="dark"] .infrastructure-section,
+[data-theme="dark"] .testimonials-section,
+[data-theme="dark"] .cta-section {
+    background-color: var(--color-bg-primary) !important;
+    color: var(--color-text-primary) !important;
+}
+
+[data-theme="dark"] .navbar,
+[data-theme="dark"] .dropdown-menu {
+    background: rgba(10, 10, 10, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+}
+
+[data-theme="dark"] .dropdown-menu {
+    background: var(--color-bg-elevated) !important;
+    border-color: var(--color-border) !important;
+}
+
+[data-theme="dark"] .dropdown-item:hover {
+    background: var(--color-bg-hover) !important;
+}
+
+[data-theme="dark"] .dropdown-icon {
+    background: var(--color-bg-tertiary) !important;
+}
+
+[data-theme="dark"] .dropdown-content strong {
+    color: var(--color-text-primary) !important;
+}
+
+[data-theme="dark"] .dropdown-content span {
+    color: var(--color-text-tertiary) !important;
+}
+
+[data-theme="dark"] .trusted-section,
+[data-theme="dark"] .marketplace-section,
+[data-theme="dark"] .pricing-section {
+    background-color: var(--color-bg-secondary) !important;
+}
+
+[data-theme="dark"] .feature-card,
+[data-theme="dark"] .app-card,
+[data-theme="dark"] .pricing-card,
+[data-theme="dark"] .testimonial-card {
+    background: var(--color-bg-card) !important;
+    border-color: var(--color-border) !important;
+}
+
+[data-theme="dark"] .feature-card h3,
+[data-theme="dark"] .app-card h4,
+[data-theme="dark"] .pricing-header h3,
+[data-theme="dark"] .section-title {
+    color: var(--color-text-primary) !important;
+}
+
+[data-theme="dark"] .feature-card p,
+[data-theme="dark"] .app-card p,
+[data-theme="dark"] .section-subtitle,
+[data-theme="dark"] .pricing-header p {
+    color: var(--color-text-secondary) !important;
+}
+
+[data-theme="dark"] .nav-link {
+    color: var(--color-text-secondary) !important;
+}
+
+[data-theme="dark"] .nav-link:hover {
+    color: var(--color-text-primary) !important;
+    background: var(--color-bg-tertiary) !important;
+}
+
+[data-theme="dark"] .footer {
+    background: var(--color-bg-secondary) !important;
+    border-color: var(--color-border) !important;
+}
+
+[data-theme="dark"] .hero-badge {
+    background: var(--color-bg-tertiary) !important;
+    border-color: var(--color-border) !important;
+    color: var(--color-text-secondary) !important;
+}
+
+[data-theme="dark"] .dashboard-preview {
+    background: var(--color-bg-tertiary) !important;
+    border-color: var(--color-border) !important;
+}
+
+[data-theme="dark"] .dashboard-header,
+[data-theme="dark"] .dashboard-sidebar {
+    background: var(--color-bg-secondary) !important;
+}
+
+[data-theme="dark"] .map-container {
+    background: var(--color-bg-tertiary) !important;
+    border-color: var(--color-border) !important;
 }
 
 ::selection {
@@ -1680,6 +1803,317 @@ h1, h2, h3, h4, h5, h6 {
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* =====================================================
+   PAGE HERO (Sub-pages)
+   ===================================================== */
+
+.page-hero {
+    padding: var(--spacing-20) 0 var(--spacing-16);
+    text-align: center;
+    position: relative;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    background: radial-gradient(ellipse at center top, rgba(99, 102, 241, 0.15) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.page-hero .hero-title {
+    font-family: var(--font-serif);
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.1;
+    margin-bottom: var(--spacing-6);
+}
+
+.page-hero .hero-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-8);
+}
+
+.page-hero .hero-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-4);
+}
+
+[data-theme="dark"] .page-hero {
+    background-color: var(--color-bg-primary) !important;
+}
+
+/* =====================================================
+   SINGLE PRICING CARD
+   ===================================================== */
+
+.pricing-single {
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-single .pricing-card {
+    max-width: 400px;
+    width: 100%;
+}
+
+/* =====================================================
+   RESOURCE BARS (Dedicated page)
+   ===================================================== */
+
+.resource-bars {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    margin-top: var(--spacing-4);
+}
+
+.resource-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+}
+
+.resource-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-tertiary);
+    width: 60px;
+}
+
+.bar-track {
+    flex: 1;
+    height: 8px;
+    background: var(--color-bg-tertiary);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background: var(--color-accent-gradient);
+    border-radius: var(--radius-full);
+    transition: width 1s ease;
+}
+
+.resource-value {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    width: 70px;
+    text-align: right;
+}
+
+[data-theme="dark"] .bar-track {
+    background: var(--color-bg-tertiary) !important;
+}
+
+/* =====================================================
+   BENEFITS SECTION (Enterprise page)
+   ===================================================== */
+
+.benefits-section {
+    padding: var(--spacing-16) 0;
+    background: var(--color-bg-secondary);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-8);
+}
+
+.benefit-item {
+    text-align: center;
+    padding: var(--spacing-6);
+}
+
+.benefit-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-4);
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--color-accent-primary);
+    border-radius: var(--radius-xl);
+}
+
+.benefit-item h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-2);
+}
+
+.benefit-item p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+[data-theme="dark"] .benefits-section {
+    background: var(--color-bg-secondary) !important;
+}
+
+@media (max-width: 1024px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =====================================================
+   CONTACT SECTION (Enterprise page)
+   ===================================================== */
+
+.contact-section {
+    padding: var(--spacing-24) 0;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-16);
+    align-items: start;
+}
+
+.contact-info .section-title {
+    text-align: left;
+    margin-bottom: var(--spacing-4);
+}
+
+.contact-info p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-8);
+    line-height: var(--line-height-relaxed);
+}
+
+.contact-points {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.contact-points li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    color: var(--color-text-secondary);
+}
+
+.contact-points svg {
+    color: var(--color-success);
+    flex-shrink: 0;
+}
+
+.contact-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-8);
+}
+
+.contact-card h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-2);
+}
+
+.contact-card > p {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-6);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-5);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.form-group label {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: var(--spacing-3) var(--spacing-4);
+    font-size: var(--font-size-base);
+    font-family: inherit;
+    background: var(--color-bg-tertiary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    color: var(--color-text-primary);
+    transition: all var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-accent-primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--color-text-muted);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+[data-theme="dark"] .contact-card {
+    background: var(--color-bg-card) !important;
+    border-color: var(--color-border) !important;
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea {
+    background: var(--color-bg-tertiary) !important;
+    border-color: var(--color-border) !important;
+    color: var(--color-text-primary) !important;
+}
+
+@media (max-width: 1024px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-12);
+    }
+
+    .contact-info .section-title {
+        text-align: center;
+    }
+
+    .contact-info p {
+        text-align: center;
+    }
+
+    .contact-points {
+        align-items: center;
+    }
 }
 
 /* =====================================================

@@ -1,0 +1,226 @@
+{% extends "templates/kenz_press_web.html" %}
+
+{% block title %}Dedicated Hosting - Kenz Press{% endblock %}
+{% block og_title %}Dedicated Hosting - Kenz Press{% endblock %}
+
+{% block page_content %}
+<!-- Hero Section -->
+<section class="page-hero">
+    <div class="container">
+        <div class="hero-badge">
+            <span class="badge-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+                    <rect x="9" y="9" width="6" height="6"/>
+                    <line x1="9" y1="1" x2="9" y2="4"/>
+                    <line x1="15" y1="1" x2="15" y2="4"/>
+                    <line x1="9" y1="20" x2="9" y2="23"/>
+                    <line x1="15" y1="20" x2="15" y2="23"/>
+                </svg>
+            </span>
+            <span>Dedicated Hosting</span>
+        </div>
+        <h1 class="hero-title">
+            Full power for
+            <span class="gradient-text">growing businesses</span>
+        </h1>
+        <p class="hero-subtitle">
+            Dedicated resources, priority support, and advanced features
+            for businesses that need more control and performance.
+        </p>
+        <div class="hero-cta">
+            <a href="/signup?plan=dedicated" class="btn btn-primary">
+                Start Free Trial
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+            <a href="#features" class="btn btn-secondary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section" id="features">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Features</span>
+            <h2 class="section-title">Power and flexibility for <span class="gradient-text">serious workloads</span></h2>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card feature-large">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+                        <rect x="9" y="9" width="6" height="6"/>
+                    </svg>
+                </div>
+                <h3>Dedicated Resources</h3>
+                <p>Your apps run on isolated infrastructure with guaranteed CPU, RAM, and storage. No noisy neighbors affecting your performance.</p>
+                <div class="feature-visual">
+                    <div class="resource-bars">
+                        <div class="resource-bar">
+                            <span class="resource-label">CPU</span>
+                            <div class="bar-track"><div class="bar-fill" style="width: 85%"></div></div>
+                            <span class="resource-value">4 vCPU</span>
+                        </div>
+                        <div class="resource-bar">
+                            <span class="resource-label">RAM</span>
+                            <div class="bar-track"><div class="bar-fill" style="width: 70%"></div></div>
+                            <span class="resource-value">4 GB</span>
+                        </div>
+                        <div class="resource-bar">
+                            <span class="resource-label">Storage</span>
+                            <div class="bar-track"><div class="bar-fill" style="width: 50%"></div></div>
+                            <span class="resource-value">50 GB SSD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                </div>
+                <h3>Multi-Region Deployment</h3>
+                <p>Deploy your apps in multiple regions for better performance and redundancy.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                </div>
+                <h3>Priority Support</h3>
+                <p>Skip the queue with priority support. Get help from Frappe experts in under 4 hours.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                </div>
+                <h3>Custom Domain</h3>
+                <p>Use your own domain with automatic SSL. We handle DNS and certificate renewal.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
+                <h3>Enhanced Security</h3>
+                <p>DDoS protection, firewall rules, and IP whitelisting for maximum security.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    </svg>
+                </div>
+                <h3>Extended Backups</h3>
+                <p>30-day backup retention with point-in-time recovery. Never lose your data.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Pricing</span>
+            <h2 class="section-title">Powerful hosting, <span class="gradient-text">fair pricing</span></h2>
+        </div>
+
+        <div class="pricing-single">
+            <div class="pricing-card featured">
+                <div class="pricing-badge">Most Popular</div>
+                <div class="pricing-header">
+                    <h3>Dedicated Hosting</h3>
+                    <p>For growing businesses</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="currency">$</span>
+                    <span class="amount">99</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        4 vCPU dedicated
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        4 GB RAM
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        50 GB SSD Storage
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Multi-region deployment
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Priority support (4h response)
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Custom domain + SSL
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        99.9% uptime SLA
+                    </li>
+                </ul>
+                <a href="/signup?plan=dedicated" class="btn btn-primary btn-block">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Scale your business with confidence</h2>
+            <p>Start your 14-day free trial today. No credit card required.</p>
+            <div class="cta-buttons">
+                <a href="/signup?plan=dedicated" class="btn btn-primary btn-lg">
+                    Start Free Trial
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="/contact" class="btn btn-ghost btn-lg">Contact Sales</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
