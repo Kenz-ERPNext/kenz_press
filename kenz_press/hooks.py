@@ -1,7 +1,7 @@
 app_name = "kenz_press"
 app_title = "Kenz Press"
 app_publisher = "sammish"
-app_description = "kenz press"
+app_description = "Modern cloud hosting platform for Frappe applications"
 app_email = "sammish.thundiyil@gmail.com"
 app_license = "mit"
 
@@ -29,8 +29,8 @@ app_license = "mit"
 # app_include_js = "/assets/kenz_press/js/kenz_press.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/kenz_press/css/kenz_press.css"
-# web_include_js = "/assets/kenz_press/js/kenz_press.js"
+web_include_css = "/assets/kenz_press/css/kenz_press.css"
+web_include_js = "/assets/kenz_press/js/kenz_press.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "kenz_press/public/scss/website"
@@ -57,7 +57,7 @@ app_license = "mit"
 # ----------
 
 # application home page (will override Website Settings)
-# home_page = "login"
+home_page = "index"
 
 # website user home page (by Role)
 # role_home_page = {

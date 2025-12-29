@@ -1,0 +1,624 @@
+{% extends "templates/kenz_press_web.html" %}
+
+{% block title %}Kenz Press - Modern Cloud Hosting for Frappe Apps{% endblock %}
+{% block og_title %}Kenz Press - Modern Cloud Hosting for Frappe Apps{% endblock %}
+
+{% block page_content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-badge">
+            <span class="badge-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+            </span>
+            <span>Lightning Fast Deployment</span>
+        </div>
+        <h1 class="hero-title">
+            Hassle-free hosting for
+            <span class="gradient-text">Frappe Apps</span>
+        </h1>
+        <p class="hero-subtitle">
+            Deploy, scale, and manage your Frappe applications with ease.
+            Automatic updates, real-time monitoring, and enterprise-grade security.
+        </p>
+        <div class="hero-cta">
+            <a href="/signup" class="btn btn-primary">
+                Get Started Free
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+            <a href="/demo" class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polygon points="10,8 16,12 10,16" fill="currentColor"/>
+                </svg>
+                Watch Demo
+            </a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-value">1000+</span>
+                <span class="stat-label">Active Sites</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-value">99.9%</span>
+                <span class="stat-label">Uptime SLA</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-value">13+</span>
+                <span class="stat-label">Global Regions</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="dashboard-preview">
+            <div class="dashboard-header">
+                <div class="window-controls">
+                    <span class="control red"></span>
+                    <span class="control yellow"></span>
+                    <span class="control green"></span>
+                </div>
+                <span class="dashboard-url">kenz.press/dashboard</span>
+            </div>
+            <div class="dashboard-content">
+                <div class="dashboard-sidebar">
+                    <div class="sidebar-item active"></div>
+                    <div class="sidebar-item"></div>
+                    <div class="sidebar-item"></div>
+                    <div class="sidebar-item"></div>
+                </div>
+                <div class="dashboard-main">
+                    <div class="chart-placeholder">
+                        <div class="chart-bar" style="height: 60%"></div>
+                        <div class="chart-bar" style="height: 80%"></div>
+                        <div class="chart-bar" style="height: 45%"></div>
+                        <div class="chart-bar" style="height: 90%"></div>
+                        <div class="chart-bar" style="height: 70%"></div>
+                        <div class="chart-bar" style="height: 85%"></div>
+                    </div>
+                    <div class="stats-row">
+                        <div class="mini-stat"></div>
+                        <div class="mini-stat"></div>
+                        <div class="mini-stat"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trusted By Section -->
+<section class="trusted-section">
+    <div class="container">
+        <p class="trusted-label">Trusted by innovative companies worldwide</p>
+        <div class="trusted-logos">
+            <div class="logo-placeholder">Company 1</div>
+            <div class="logo-placeholder">Company 2</div>
+            <div class="logo-placeholder">Company 3</div>
+            <div class="logo-placeholder">Company 4</div>
+            <div class="logo-placeholder">Company 5</div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section" id="features">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Features</span>
+            <h2 class="section-title">Everything you need to <span class="gradient-text">deploy and scale</span></h2>
+            <p class="section-subtitle">
+                Powerful infrastructure designed specifically for Frappe applications
+            </p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card feature-large">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg>
+                </div>
+                <h3>One-Click Deployment</h3>
+                <p>Deploy your Frappe apps in seconds. No server configuration required. Just select your app and go live instantly.</p>
+                <div class="feature-visual">
+                    <div class="deploy-steps">
+                        <div class="deploy-step active">
+                            <span class="step-number">1</span>
+                            <span class="step-text">Choose App</span>
+                        </div>
+                        <div class="step-connector"></div>
+                        <div class="deploy-step">
+                            <span class="step-number">2</span>
+                            <span class="step-text">Select Plan</span>
+                        </div>
+                        <div class="step-connector"></div>
+                        <div class="deploy-step">
+                            <span class="step-number">3</span>
+                            <span class="step-text">Go Live</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                </div>
+                <h3>Real-time Monitoring</h3>
+                <p>Monitor your application performance, resource usage, and user activity in real-time with our intuitive dashboard.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
+                <h3>Enterprise Security</h3>
+                <p>SSL certificates, DDoS protection, automated backups, and SOC2 compliant infrastructure keep your data safe.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                </div>
+                <h3>Global Edge Network</h3>
+                <p>13+ data centers across the globe ensure low latency and fast response times for users everywhere.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"/>
+                        <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                </div>
+                <h3>Auto Updates</h3>
+                <p>Stay current with automatic security patches and app updates. Schedule updates during low-traffic hours.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                </div>
+                <h3>24/7 Expert Support</h3>
+                <p>Get help from Frappe experts who understand your stack. Average response time under 2 hours.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Apps Marketplace Section -->
+<section class="marketplace-section" id="marketplace">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Marketplace</span>
+            <h2 class="section-title">100+ Open Source Apps <span class="gradient-text">Ready to Deploy</span></h2>
+            <p class="section-subtitle">
+                Choose from our curated collection of production-ready Frappe applications
+            </p>
+        </div>
+
+        <div class="apps-grid">
+            <div class="app-card">
+                <div class="app-icon erpnext">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    </svg>
+                </div>
+                <h4>ERPNext</h4>
+                <p>Complete ERP solution for manufacturing, distribution, retail, and services.</p>
+                <span class="app-tag">Most Popular</span>
+            </div>
+
+            <div class="app-card">
+                <div class="app-icon hrms">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </div>
+                <h4>Frappe HR</h4>
+                <p>Modern HRMS for employee lifecycle, payroll, and talent management.</p>
+                <span class="app-tag">HR</span>
+            </div>
+
+            <div class="app-card">
+                <div class="app-icon lms">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                    </svg>
+                </div>
+                <h4>Frappe LMS</h4>
+                <p>Create and deliver online courses with progress tracking and certificates.</p>
+                <span class="app-tag">Education</span>
+            </div>
+
+            <div class="app-card">
+                <div class="app-icon builder">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"/>
+                        <rect x="14" y="3" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/>
+                        <rect x="3" y="14" width="7" height="7"/>
+                    </svg>
+                </div>
+                <h4>Frappe Builder</h4>
+                <p>Visual website builder with drag-and-drop interface and custom components.</p>
+                <span class="app-tag">Website</span>
+            </div>
+
+            <div class="app-card">
+                <div class="app-icon raven">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                </div>
+                <h4>Raven</h4>
+                <p>Team communication platform with channels, threads, and file sharing.</p>
+                <span class="app-tag">Communication</span>
+            </div>
+
+            <div class="app-card">
+                <div class="app-icon gameplan">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 11l3 3L22 4"/>
+                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                    </svg>
+                </div>
+                <h4>Gameplan</h4>
+                <p>Project management with tasks, discussions, and team collaboration.</p>
+                <span class="app-tag">Projects</span>
+            </div>
+        </div>
+
+        <div class="marketplace-cta">
+            <a href="/marketplace" class="btn btn-outline">
+                Explore All Apps
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Global Infrastructure Section -->
+<section class="infrastructure-section" id="infrastructure">
+    <div class="container">
+        <div class="infra-content">
+            <div class="infra-text">
+                <span class="section-badge">Global Infrastructure</span>
+                <h2 class="section-title">Deploy closer to your users</h2>
+                <p class="section-subtitle">
+                    Choose from 13+ data center locations powered by AWS and Oracle Cloud Infrastructure for optimal performance and compliance.
+                </p>
+                <ul class="infra-features">
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Multi-region redundancy
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Data residency compliance
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Automatic failover
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Edge caching network
+                    </li>
+                </ul>
+            </div>
+            <div class="world-map">
+                <div class="map-container">
+                    <svg viewBox="0 0 800 400" class="map-svg">
+                        <!-- Simplified world map outline -->
+                        <path class="map-outline" d="M150,180 Q200,150 250,170 Q300,160 350,180 Q400,150 450,170 Q500,180 550,160 Q600,170 650,180" fill="none" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+                        <!-- Data center markers -->
+                        <circle class="dc-marker" cx="180" cy="120" r="6"/>
+                        <circle class="dc-marker" cx="220" cy="180" r="6"/>
+                        <circle class="dc-marker" cx="380" cy="140" r="6"/>
+                        <circle class="dc-marker" cx="420" cy="160" r="6"/>
+                        <circle class="dc-marker" cx="520" cy="170" r="6"/>
+                        <circle class="dc-marker" cx="560" cy="200" r="6"/>
+                        <circle class="dc-marker" cx="620" cy="180" r="6"/>
+                        <circle class="dc-marker pulse" cx="650" cy="220" r="6"/>
+                    </svg>
+                    <div class="region-labels">
+                        <span class="region-label" style="left: 15%; top: 25%">US East</span>
+                        <span class="region-label" style="left: 20%; top: 50%">US West</span>
+                        <span class="region-label" style="left: 45%; top: 30%">London</span>
+                        <span class="region-label" style="left: 50%; top: 45%">Frankfurt</span>
+                        <span class="region-label" style="left: 65%; top: 40%">Mumbai</span>
+                        <span class="region-label" style="left: 70%; top: 55%">Singapore</span>
+                        <span class="region-label" style="left: 80%; top: 45%">Sydney</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing-section" id="pricing">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Pricing</span>
+            <h2 class="section-title">Simple, <span class="gradient-text">transparent pricing</span></h2>
+            <p class="section-subtitle">
+                Pay only for the compute you use. No hidden fees, no per-user charges.
+            </p>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Shared</h3>
+                    <p>Perfect for small teams and startups</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="currency">$</span>
+                    <span class="amount">25</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        1 GB RAM
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        10 GB Storage
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Automatic backups
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Free SSL certificate
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Email support
+                    </li>
+                </ul>
+                <a href="/signup?plan=shared" class="btn btn-outline btn-block">Get Started</a>
+            </div>
+
+            <div class="pricing-card featured">
+                <div class="pricing-badge">Most Popular</div>
+                <div class="pricing-header">
+                    <h3>Dedicated</h3>
+                    <p>For growing businesses</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="currency">$</span>
+                    <span class="amount">99</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        4 GB RAM
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        50 GB SSD Storage
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Dedicated resources
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Multi-region deployment
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Priority support
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Custom domain
+                    </li>
+                </ul>
+                <a href="/signup?plan=dedicated" class="btn btn-primary btn-block">Get Started</a>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Enterprise</h3>
+                    <p>For large organizations</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="amount custom">Custom</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Unlimited resources
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Private cloud option
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        SLA guarantees
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Dedicated account manager
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        24/7 phone support
+                    </li>
+                    <li>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Custom integrations
+                    </li>
+                </ul>
+                <a href="/contact" class="btn btn-outline btn-block">Contact Sales</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section" id="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Testimonials</span>
+            <h2 class="section-title">Loved by <span class="gradient-text">developers worldwide</span></h2>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <svg class="quote-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.2">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                    <p>"Kenz Press makes life easier for devs, partners, and clients. Takes away all worries about infrastructure so we can focus on building great products."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <span>RS</span>
+                    </div>
+                    <div class="author-info">
+                        <strong>Rahul Sharma</strong>
+                        <span>CTO, TechCorp Solutions</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <svg class="quote-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.2">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                    <p>"Migrating to Kenz Press was seamless. The support team helped us every step of the way, and our uptime has been perfect since day one."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <span>AK</span>
+                    </div>
+                    <div class="author-info">
+                        <strong>Amira Khan</strong>
+                        <span>Engineering Lead, StartupX</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <svg class="quote-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.2">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                    <p>"The compute-based pricing model is a game changer. We've reduced our hosting costs by 40% while getting better performance."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <span>MC</span>
+                    </div>
+                    <div class="author-info">
+                        <strong>Michael Chen</strong>
+                        <span>Founder, CloudFirst Inc</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <div class="cta-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+                $10 Free Credits
+            </div>
+            <h2>Ready to get started?</h2>
+            <p>Create your account in seconds. No credit card required.<br>Get $10 in free credits to try any app.</p>
+            <div class="cta-buttons">
+                <a href="/signup" class="btn btn-primary btn-lg">
+                    Start Free Trial
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="/contact" class="btn btn-ghost btn-lg">Talk to Sales</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
